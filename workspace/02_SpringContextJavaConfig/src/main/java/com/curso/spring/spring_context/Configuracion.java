@@ -25,9 +25,10 @@ public class Configuracion {
 	@Scope("prototype")
 	@Autowired
 	public Jefe jefe(Trabajador trabajador) {
+		//Jefe jefe = new Jefe(trabajador);
 		Jefe jefe = new Jefe();
 		jefe.setTrabajador(trabajador());
-		jefe.setTrabajador(trabajador());
+		//jefe.setTrabajador(trabajador());
 		return jefe;
 	}
 	

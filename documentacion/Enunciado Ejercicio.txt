@@ -1,0 +1,13 @@
+Implementar el Core de un aplicacion (Servicio, Negocio y Persistencia).
+
+La funcionalidad es dar de alta un usuario, teniendo el usuario dos campos nombre y apellido.
+
+Se deberá realizar una validacion previa al almacenamiento, donde se compruebe que el nombre no
+es NULL.
+
+Se deberá almacenar en Memoria (Map).
+
+La idea es aplicar DI, IoC, desacoplamiento a nivel de classpath, de tal forma que en la 
+version 2, se pueda cambiar la implementación de la persistencia para emplear un BD y que 
+el cambio en el resto de la aplicación, sea minimo, lo deseado es que sea unicamente a nivel 
+de classpath.

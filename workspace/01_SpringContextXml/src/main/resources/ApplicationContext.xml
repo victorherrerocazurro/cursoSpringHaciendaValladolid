@@ -14,5 +14,15 @@
 	<!-- Ctor por defecto -->
 	<bean class="com.curso.spring.spring_context.Jefe" scope="prototype" autowire="byType">
 	</bean>
-
+	
+	<!--  
+	<bean class="com.curso.spring.spring_context.Jefe" scope="prototype" >
+		<property name="trabajador" ref="trabajador1"></property>
+	</bean>
+	-->
+	<!-- 
+	<bean class="com.curso.spring.spring_context.Jefe" scope="prototype" >
+		<constructor-arg name="trabajador" ref="trabajador1"/>
+	</bean>
+	-->
 </beans>
