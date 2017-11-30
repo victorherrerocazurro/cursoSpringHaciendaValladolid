@@ -1,5 +1,7 @@
 package com.ejercicio.spring.core.servicios;
 
+import java.util.Collection;
+
 import com.ejercicio.spring.core.entidades.Usuario;
 import com.ejercicio.spring.core.negocio.ValidadorUsuario;
 import com.ejercicio.spring.core.persistencia.UsuarioRepository;
@@ -22,6 +24,10 @@ public class ServicioUsuarioConValidacion implements ServicioUsuario{
 		} else {
 			throw new RuntimeException("El usuario no es valido");
 		}
+	}
+
+	public Collection<Usuario> busquedaUsuarios() {
+		return usuarioRepository.consultarTodos();
 	}
 
 }
