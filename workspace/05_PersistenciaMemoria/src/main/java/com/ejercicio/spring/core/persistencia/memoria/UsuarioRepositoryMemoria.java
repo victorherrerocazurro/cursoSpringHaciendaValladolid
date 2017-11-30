@@ -1,5 +1,6 @@
 package com.ejercicio.spring.core.persistencia.memoria;
 
+import java.util.Collection;
 import java.util.Map;
 
 import com.ejercicio.spring.core.entidades.Usuario;
@@ -21,6 +22,10 @@ public class UsuarioRepositoryMemoria implements UsuarioRepository{
 		usuario.setId(id);
 		tablaUsuarios.put(id, usuario);
 		return id;
+	}
+	
+	public Collection<Usuario> consultarTodos(){
+		return tablaUsuarios.values();
 	}
 
 }
