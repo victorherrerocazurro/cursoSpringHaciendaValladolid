@@ -5,15 +5,30 @@
 	<artifactId>05_PersistenciaJdbc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+		<!-- Porque quiero utilizar JdbcTemplate en la implementacion de mi Repository -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>4.3.12.RELEASE</version>
 		</dependency>
+		<!-- Porque quiero tener una preconfiguracion de beans de la capa de Persistencia -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.12.RELEASE</version>
+		</dependency>
+		<!-- Porque mi capa de persistencia esta marcada por el cumplimineto de 
+			las interfaces descritas en este proyecto -->
 		<dependency>
 			<groupId>com.ejercicio.spring</groupId>
 			<artifactId>05_Interfaces</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- Porque Quiero predefinir un datasource, quizas no sea el lugar...... -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
 		</dependency>
 	</dependencies>
 </project>
